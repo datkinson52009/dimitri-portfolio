@@ -47,11 +47,13 @@ h3 {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+  text-align: center;
 }
 
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+  text-align: center;
 }
 .launch-link {
   background: var(--primary-color);
@@ -111,4 +113,18 @@ h3 {
 }
 .all-apps {
   padding-top: 40px;
+}
+@media (max-width: 767px) {
+  .app-section p,
+  h4,
+  a {
+    display: block;
+    text-align: center;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .email-link {
+    font-size: 20px;
+  }
 }
