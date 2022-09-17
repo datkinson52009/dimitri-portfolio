@@ -230,6 +230,9 @@ footer .fa-solid:hover {
     display: block;
     text-align: center;
   }
+  h1 {
+    font-size: 80px;
+  }
   h2 {
     font-size: 30px;
   }
