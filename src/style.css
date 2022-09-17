@@ -9,12 +9,15 @@
 body {
   margin-top: 100px;
 }
+
 .navbar {
-  background: linear-gradient(
-    0deg,
-    rgb(238, 106, 137) 0%,
-    rgb(238, 90, 191) 100%
-  );
+  background: var(--primary-color);
+  color: #66bfbf;
+}
+.navbar-brand {
+  border: 1px solid var(--fourth-color);
+  border-radius: 10px;
+  padding: 0px 5px;
 }
 h1,
 h2,
@@ -30,7 +33,7 @@ h1 {
 
 h2,
 h4 {
-  font-size: 48px;
+  font-size: 37px;
 }
 
 h3 {
@@ -47,11 +50,27 @@ h5 {
 }
 footer {
   background-color: var(--fourth-color);
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
+  color: white;
 }
 footer .email {
+  font-family: segoe;
+  font-size: 25px;
+  font-weight: thin;
+}
+footer .contact {
+  font-family: segoe;
+  font-size: 25px;
+  font-weight: bold;
+}
+footer p {
+  font-family: segoe;
   font-size: 15px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
 }
 .dimitri-profile {
   margin: 0 auto;
@@ -81,11 +100,18 @@ footer .email {
   color: white;
   text-align: center;
 }
-
+.contact-link:hover {
+  color: var(--secondary-color);
+  background: var(--fourth-color);
+}
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
   text-align: center;
+}
+.about-link:hover {
+  color: var(--fourth-color);
+  border: 1px solid var(--fourth-color);
 }
 .header {
   padding: 5px;
@@ -97,30 +123,27 @@ footer .email {
   font-weight: bold;
   font-size: 40px;
 }
+.project-title {
+  font-size: 28px;
+}
 .project-thumbnail {
   padding: 10px;
   margin-bottom: 20px;
 }
-.learn-link {
+.launch-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
-  margin: 50px;
+  margin: 30px;
   border-radius: 4px;
   padding: 10px 0px;
   text-decoration: none;
   display: block;
   text-align: center;
 }
-.launch-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
+.launch-link:hover {
+  background: var(--fourth-color);
   color: white;
-  margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
 }
 .fa-brands {
   color: white;
@@ -146,7 +169,17 @@ footer .email {
   line-height: 1.5;
   text-align: center;
 }
-
+.col-1 {
+  margin-right: 20px;
+}
+.col-1 img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.certificates {
+  margin: 40px 0;
+}
 .email-link {
   display: flex;
   justify-content: center;
@@ -168,13 +201,7 @@ footer .email {
   line-height: 1.5;
   text-align: left;
 }
-.app-section {
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-.all-apps {
-  padding-top: 40px;
-}
+
 @media (max-width: 767px) {
   .app-section p,
   h4,
@@ -185,7 +212,25 @@ footer .email {
   h2 {
     font-size: 30px;
   }
+  body {
+  }
+  .introduction {
+    padding-top: 0px;
+  }
+  footer .email {
+    font-size: 20px;
+  }
+  footer .divider {
+    display: none;
+  }
   .email-link {
     font-size: 20px;
+  }
+  .project-thumbnail {
+    margin-bottom: 40px;
+  }
+
+  .col-1 {
+    width: 15%;
   }
 }
