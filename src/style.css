@@ -236,15 +236,12 @@ footer .fa-solid:hover {
   h2 {
     font-size: 30px;
   }
-  body {
-  }
   .introduction {
     padding-top: 0px;
   }
   footer .email {
     font-size: 20px;
   }
-
   .email-link {
     font-size: 20px;
   }
@@ -252,6 +249,6 @@ footer .fa-solid:hover {
     margin-bottom: 40px;
   }
   .col-1 {
-    width: 15%;
+    width: 20%;
   }
 }
